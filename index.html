@@ -1,49 +1,113 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/vnd.microsoft.icon" />
   <title>Taylor Pate</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 2rem auto;
-      line-height: 1.6;
-      padding: 0 1rem;
+     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #000000;
+        background-image: url(assets/bg.png);
+        background-repeat: repeat;
+        color: #c0c0c0;
+        margin-top: 0px;
+        padding-top: 0px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        cursor: default;
     }
-    header, footer {
-      text-align: center;
-      margin-bottom: 2rem;
+    .navbar-default img {
+        height: 35px !important;
+        /* center in div */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 6px;
     }
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    .navbar-default {
+        background-color: #ff0000;
+        background-image: none;
+        border: 1px solid #300;
+        
     }
-    a {
-      color: #0066cc;
-      text-decoration: none;
+    #navbar {
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      height: 38px;
+      padding-bottom: 12px;
     }
-    a:hover {
-      text-decoration: underline;
+
+    #blogger-button, #google-button, #linkedin-button, #github-button, #drupal-button {
+        float: right;
+        width: 33px;
+        height: 38px;
+        margin: 3px;
+        cursor: pointer;
     }
+
+    #github-button {
+        background-image: url(assets/github_up.png);
+    }
+
+    #github-button:hover {
+        background-image: url(assets/github_over.png);
+    }
+
+    #linkedin-button {
+        background-image: url(assets/linkedin_up.png);
+    }
+
+    #linkedin-button:hover {
+        background-image: url(assets/linkedin_over.png);
+    }
+
+    #social-container {
+        width: 78px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 32px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    #disclaimer {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        float: right;
+        font-size: 11px;
+    }
+
+    footer {
+      padding-top: 30px;
+    }
+
   </style>
 </head>
-<body>
+<body class="html">
+    <header id="navbar" role="banner" class="navbar container navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+          <img src="assets/logo.png" alt="Home" />
+    </div>
+</header>
 
-  <header>
-    <h1>Taylor Pate</h1>
-    <p><a href="http://www.linkedin.com/pub/taylor-pate/1/a34/396" target="_blank" rel="noopener">Connect with me on LinkedIn</a></p>
-  </header>
 
-  <!--<section>
-    <h2>About Me</h2>
-    <p>Short bio or summary goes here. E.g., “I’m a software engineer with X years of experience in …”</p>
-  </section>-->
-
-  <footer>
-    <p>© 2025 Taylor Pate</p>
+  <footer class="footer container">
+      <div class="region region-footer">
+        <p id="social-container">
+          <a href="http://www.linkedin.com/pub/taylor-pate/1/a34/396" id="linkedin-button" target="_blank"></a>
+          <a href="https://github.com/taylorpate" id="github-button" target="_blank"></a>
+        </p>
+        <div id="disclaimer">Taylor Pate © 2025</div>
+    </div>
   </footer>
-
 </body>
 </html>
